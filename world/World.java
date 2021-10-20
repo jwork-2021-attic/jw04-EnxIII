@@ -27,10 +27,10 @@ import java.util.List;
  */
 public class World {
 
-    private Tile[][] tiles;
-    private int width;
-    private int height;
-    private List<Creature> creatures;
+    protected Tile[][] tiles;
+    protected int width;
+    protected int height;
+    protected List<Creature> creatures;
 
     public static final int TILE_TYPES = 2;
 

@@ -50,7 +50,7 @@ public class Line implements Iterable<Point> {
 
         while (true) {
             this.points.add(new Point(x0, y0));
-            if (x0 == x1 || y0 == y1) {
+            if (x0 == x1 && y0 == y1) {
                 break;
             }
 
