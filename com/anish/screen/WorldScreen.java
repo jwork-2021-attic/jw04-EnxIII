@@ -48,7 +48,7 @@ public class WorldScreen implements Screen {
             for (int j = 0; j < WorldScreen.col; ++j){
                 int rank = randomSeq[i * WorldScreen.col + j];
                 int div = (256 / WorldScreen.row / WorldScreen.col);
-                bros[i][j] = new Calabash(new Color(200, 68 + rank * (div / 2), rank * (div / 2)), rank, world);
+                bros[i][j] = new Calabash(new Color(100, 28 + rank * (div / 2), rank * (div / 2)), rank, world);
                 world.put(bros[i][j], 12 + (j << 1), 3 + (i << 1));
             }
         }
@@ -113,9 +113,9 @@ public class WorldScreen implements Screen {
     int i = 0;
 
     @Override
-    public Screen respondToUserInput(KeyEvent key) {
-
-        if (i < this.sortSteps.length) {
+    public Screen respondToUserInput(KeyEvent key){
+        
+        if (i  < this.sortSteps.length) {
             this.execute(bros, sortSteps[i]);
             i++;
         }

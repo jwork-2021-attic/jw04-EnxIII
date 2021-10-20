@@ -2,6 +2,7 @@
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.concurrent.TimeUnit;
 
 import javax.swing.JFrame;
 
@@ -43,6 +44,9 @@ public class Main extends JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         screen = screen.respondToUserInput(e);
+        //try{
+        //    TimeUnit.MILLISECONDS.sleep(500);
+        //   }catch(Exception ex){}
         repaint();
     }
 
